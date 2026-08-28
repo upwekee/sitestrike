@@ -96,7 +96,7 @@ export default function BookingModal({
           <p className="text-xs sm:text-sm text-slate-300 mt-1" style={{ fontFamily: "'Exo 2',sans-serif" }}>
             {selectedClub
               ? "Позвоните администратору клуба, напишите в VK или забронируйте онлайн в SmartGamer"
-              : "Выберите клуб или установите официальное приложение SmartGamer"}
+              : "Выберите клуб или забронируйте онлайн в приложении SmartGamer"}
           </p>
         </div>
 

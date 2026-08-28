@@ -150,7 +150,6 @@ function Navbar({
     ? [
         ["ГЛАВНАЯ", "#hero"],
         ["КЛУБЫ", "#clubs"],
-        ["ЗОНЫ", "#zones"],
         ["ТАРИФЫ", "#pricing"],
         ["АКЦИИ", "#promotions"],
         ["БАР И ЕДА", "#food"],
@@ -1321,9 +1320,9 @@ function SmartGamerSection() {
               className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl shadow-[0_0_40px_rgba(0,102,255,0.4)] border-2 border-white/10 shrink-0"
             />
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#10b981]/20 text-[#10b981] text-xs font-bold uppercase tracking-wider mb-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0066ff]/20 text-[#00d4ff] text-xs font-bold uppercase tracking-wider mb-2">
                 <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
-                <span>Официальное приложение сети</span>
+                <span>SmartGamer Online</span>
               </div>
               <h3 className="text-2xl sm:text-4xl font-bold text-white mb-2" style={{ fontFamily: "'Russo One',sans-serif" }}>
                 SmartGamer · Бронь со смартфона
@@ -1579,17 +1578,17 @@ export default function App() {
           <Hero />
           <FeatureRibbon />
           <ClubsSection onSelectClub={handleSelectClub} onOpenBooking={handleOpenBooking} />
+          <ContactsSection
+            selectedClubId={selectedMapClubId}
+            onSelectClub={setSelectedMapClubId}
+            onOpenBooking={handleOpenBooking}
+          />
           <ZonesSection onSelectClub={handleSelectClub} />
           <PromotionsOverview onOpenClubPage={handleSelectClub} />
           <PricingSection onOpenBooking={handleOpenBooking} />
           <FoodBarSection onSelectClub={handleSelectClub} />
           <SmartGamerSection />
           <PhotoShowcaseSection onOpenPhoto={handleOpenPhoto} />
-          <ContactsSection
-            selectedClubId={selectedMapClubId}
-            onSelectClub={setSelectedMapClubId}
-            onOpenBooking={handleOpenBooking}
-          />
         </>
       ) : (
         /* ─── Dedicated Club Page ─── */
