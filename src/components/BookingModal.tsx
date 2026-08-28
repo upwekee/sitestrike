@@ -1,3 +1,4 @@
+import { getAssetUrl } from '../utils/asset';
 import React, { useState, useEffect } from "react";
 import { CLUBS_DATA, ClubData } from "../data/clubsData";
 import {
@@ -132,7 +133,7 @@ export default function BookingModal({
             <div className="p-4 sm:p-5 rounded-xl bg-gradient-to-br from-[#0066ff]/15 to-[#8b5cf6]/10 border border-[#0066ff]/40 mt-2">
               <div className="flex items-center gap-3 mb-3">
                 <img
-                  src="./smartgamer.webp"
+                  src={getAssetUrl("smartgamer.webp")}
                   alt="SmartGamer"
                   className="w-10 h-10 rounded-xl shadow-md border border-white/10"
                 />

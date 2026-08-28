@@ -1,3 +1,4 @@
+import { getAssetUrl } from '../utils/asset';
 export interface HardwareZone {
   name: string;
   cpu: string;
@@ -96,32 +97,32 @@ export interface ClubData {
 
 export const COMMON_FOOD_MENU = {
   snacks: [
-    { title: "Картошка фри с соусом", price: "150 ₽", desc: "Хрустящий золотистый картофель фри с порционным соусом на выбор", tag: "Хит", image: "./media/food/snack-fries.jpg", category: "Горячие снеки" },
-    { title: "Сэндвич горячий", price: "180 ₽", desc: "Сытный поджаренный сэндвич с ветчиной, сыром и фирменным соусом", tag: "Снек", image: "./media/food/snack-sandwich.jpg", category: "Горячие снеки" },
-    { title: "Наггетсы куриные", price: "220 ₽", desc: "Нежное сочное куриное филе в хрустящей панировке (6 шт)", tag: "Популярное", image: "./media/food/snack-nuggets.jpg", category: "Горячие снеки" },
-    { title: "Чебупелли мясные", price: "220 ₽", desc: "Жареные золотистые мини-пельмешки с сочным мясом", tag: "Хит", image: "./media/food/chebupeli.jpg", category: "Горячие снеки" },
-    { title: "Чебупицца", price: "220 ₽", desc: "Хрустящие запеченные треугольные снеки с сыром и пепперони", tag: "Хит", image: "./media/food/chebupizza.jpg", category: "Горячие снеки" },
-    { title: "Хотстеры / Хот-дог", price: "220 ₽", desc: "Мини-сосиски в воздушном тесте с горчичным соусом", tag: "Снек", image: "./media/food/snack-hotdog.jpg", category: "Горячие снеки" },
-    { title: "Лапша Wok / Доширак", price: "80 ₽", desc: "Быстрый горячий сытный перекус во время катки", tag: "", image: "./media/food/snack-noodles.jpg", category: "Быстрый перекус" },
-    { title: "Чебурек с мясом", price: "90 ₽", desc: "Большой хрустящий чебурек с сочной начинкой из фарша и зелени", tag: "Топ", image: "./media/food/cheburek.jpg", category: "Быстрый перекус" },
+    { title: "Картошка фри с соусом", price: "150 ₽", desc: "Хрустящий золотистый картофель фри с порционным соусом на выбор", tag: "Хит", image: getAssetUrl("media/food/snack-fries.jpg"), category: "Горячие снеки" },
+    { title: "Сэндвич горячий", price: "180 ₽", desc: "Сытный поджаренный сэндвич с ветчиной, сыром и фирменным соусом", tag: "Снек", image: getAssetUrl("media/food/snack-sandwich.jpg"), category: "Горячие снеки" },
+    { title: "Наггетсы куриные", price: "220 ₽", desc: "Нежное сочное куриное филе в хрустящей панировке (6 шт)", tag: "Популярное", image: getAssetUrl("media/food/snack-nuggets.jpg"), category: "Горячие снеки" },
+    { title: "Чебупелли мясные", price: "220 ₽", desc: "Жареные золотистые мини-пельмешки с сочным мясом", tag: "Хит", image: getAssetUrl("media/food/chebupeli.jpg"), category: "Горячие снеки" },
+    { title: "Чебупицца", price: "220 ₽", desc: "Хрустящие запеченные треугольные снеки с сыром и пепперони", tag: "Хит", image: getAssetUrl("media/food/chebupizza.jpg"), category: "Горячие снеки" },
+    { title: "Хотстеры / Хот-дог", price: "220 ₽", desc: "Мини-сосиски в воздушном тесте с горчичным соусом", tag: "Снек", image: getAssetUrl("media/food/snack-hotdog.jpg"), category: "Горячие снеки" },
+    { title: "Лапша Wok / Доширак", price: "80 ₽", desc: "Быстрый горячий сытный перекус во время катки", tag: "", image: getAssetUrl("media/food/snack-noodles.jpg"), category: "Быстрый перекус" },
+    { title: "Чебурек с мясом", price: "90 ₽", desc: "Большой хрустящий чебурек с сочной начинкой из фарша и зелени", tag: "Топ", image: getAssetUrl("media/food/cheburek.jpg"), category: "Быстрый перекус" },
   ],
   pizza: [
-    { title: "Студенческая", price: "300 ₽", desc: "Томатная основа, сыр моцарелла, колбаски, зелень и пряности", tag: "Выгодно", image: "./media/food/pizza-student.jpg", category: "Пицца 30см" },
-    { title: "Маргарита", price: "300 ₽", desc: "Классическая итальянская основа с томатами и тянущимся сыром", tag: "Классика", image: "./media/food/pizza-margherita.jpg", category: "Пицца 30см" },
-    { title: "С ветчиной и грибами", price: "350 ₽", desc: "Нежная ветчина, свежие шампиньоны, моцарелла и белый соус", tag: "Топ", image: "./media/food/pizza-ham-mushrooms.jpg", category: "Пицца 30см" },
-    { title: "Мясная фирменная", price: "350 ₽", desc: "Пепперони, бекон, охотничьи колбаски, моцарелла и острый соус", tag: "Сытно", image: "./media/food/pizza-meat.jpg", category: "Пицца 30см" },
+    { title: "Студенческая", price: "300 ₽", desc: "Томатная основа, сыр моцарелла, колбаски, зелень и пряности", tag: "Выгодно", image: getAssetUrl("media/food/pizza-student.jpg"), category: "Пицца 30см" },
+    { title: "Маргарита", price: "300 ₽", desc: "Классическая итальянская основа с томатами и тянущимся сыром", tag: "Классика", image: getAssetUrl("media/food/pizza-margherita.jpg"), category: "Пицца 30см" },
+    { title: "С ветчиной и грибами", price: "350 ₽", desc: "Нежная ветчина, свежие шампиньоны, моцарелла и белый соус", tag: "Топ", image: getAssetUrl("media/food/pizza-ham-mushrooms.jpg"), category: "Пицца 30см" },
+    { title: "Мясная фирменная", price: "350 ₽", desc: "Пепперони, бекон, охотничьи колбаски, моцарелла и острый соус", tag: "Сытно", image: getAssetUrl("media/food/pizza-meat.jpg"), category: "Пицца 30см" },
   ],
   drinks: [
-    { title: "Monster Energy (0.5л)", price: "200 ₽", desc: "Оригинальный, Mango Loco, Ultra White, Pipeline Punch", tag: "Энергия", image: "./media/food/drink-monster.jpg", category: "Энергетики" },
-    { title: "Red Bull (0.33л)", price: "220 ₽", desc: "Классический премиальный энергетик для ночных каток", tag: "Энергия", image: "./media/food/drink-redbull.jpg", category: "Энергетики" },
-    { title: "Flash Up Energy (0.45л)", price: "130 ₽", desc: "Ягодный, ультра, оригинальный вкус", tag: "Выгодно", image: "./media/food/drink-flash.jpg", category: "Энергетики" },
-    { title: "Coca-Cola / Добрый Кола (0.5л)", price: "120 ₽", desc: "Охлаждённая классическая газировка", tag: "Холодные", image: "./media/food/drink-cola.jpg", category: "Напитки" },
+    { title: "Monster Energy (0.5л)", price: "200 ₽", desc: "Оригинальный, Mango Loco, Ultra White, Pipeline Punch", tag: "Энергия", image: getAssetUrl("media/food/drink-monster.jpg"), category: "Энергетики" },
+    { title: "Red Bull (0.33л)", price: "220 ₽", desc: "Классический премиальный энергетик для ночных каток", tag: "Энергия", image: getAssetUrl("media/food/drink-redbull.jpg"), category: "Энергетики" },
+    { title: "Flash Up Energy (0.45л)", price: "130 ₽", desc: "Ягодный, ультра, оригинальный вкус", tag: "Выгодно", image: getAssetUrl("media/food/drink-flash.jpg"), category: "Энергетики" },
+    { title: "Coca-Cola / Добрый Кола (0.5л)", price: "120 ₽", desc: "Охлаждённая классическая газировка", tag: "Холодные", image: getAssetUrl("media/food/drink-cola.jpg"), category: "Напитки" },
   ],
   tea: [
     {
       category: "Китайская чайная церемония",
       price: "300 ₽",
-      image: "./media/food/tea-puer.jpg",
+      image: getAssetUrl("media/food/tea-puer.jpg"),
       desc: "Элитные выдержанные сорта: Шу и Шен Пуэры, легендарный Да Хун Пао на пролив",
       items: [
         'Шен Пуэр Мэнхай "Свежий лист"',
@@ -132,7 +133,7 @@ export const COMMON_FOOD_MENU = {
     {
       category: "Классические сорта и Улун",
       price: "250 ₽",
-      image: "./media/food/tea-oolong.jpg",
+      image: getAssetUrl("media/food/tea-oolong.jpg"),
       desc: "Отборные листовые сорта: ароматный молочный улун, зелёный с жасмином и чабрец",
       items: [
         "Молочный улун",
@@ -145,7 +146,7 @@ export const COMMON_FOOD_MENU = {
     {
       category: "Фруктовые и ягодные сборы",
       price: "250 ₽",
-      image: "./media/food/tea-berries.jpg",
+      image: getAssetUrl("media/food/tea-berries.jpg"),
       desc: "Натуральные фруктово-ягодные сборы в прозрачном чайнике на чайной свече",
       items: [
         "Нахальный Наглый Фрукт",
@@ -176,17 +177,17 @@ export const CLUBS_DATA: ClubData[] = [
     lng: 39.230524,
     workstationsCount: 45,
     tag: "Флагман",
-    image: "./photos/lomonosova/photo-3.jpg",
+    image: getAssetUrl("photos/lomonosova/photo-3.jpg"),
     gallery: [
-      "./photos/lomonosova/photo-1.jpg",
-      "./photos/lomonosova/photo-2.jpg",
-      "./photos/lomonosova/photo-3.jpg",
-      "./photos/lomonosova/photo-4.jpg",
-      "./photos/lomonosova/photo-5.jpg",
-      "./photos/lomonosova/photo-6.jpg",
-      "./photos/lomonosova/photo-7.jpg",
-      "./photos/lomonosova/photo-8.jpg",
-      "./photos/lomonosova/photo-9.jpg",
+      getAssetUrl("photos/lomonosova/photo-1.jpg"),
+      getAssetUrl("photos/lomonosova/photo-2.jpg"),
+      getAssetUrl("photos/lomonosova/photo-3.jpg"),
+      getAssetUrl("photos/lomonosova/photo-4.jpg"),
+      getAssetUrl("photos/lomonosova/photo-5.jpg"),
+      getAssetUrl("photos/lomonosova/photo-6.jpg"),
+      getAssetUrl("photos/lomonosova/photo-7.jpg"),
+      getAssetUrl("photos/lomonosova/photo-8.jpg"),
+      getAssetUrl("photos/lomonosova/photo-9.jpg"),
     ],
     pricing: {
       pc: {
@@ -249,7 +250,7 @@ export const CLUBS_DATA: ClubData[] = [
         badge: "Бонус на счёт",
         badgeColor: "#1166ff",
         description: "Пополняй баланс на крупную сумму и получай моментальный дополнительный бонус на счёт!",
-        image: "./media/akcii/20let-military.jpg",
+        image: getAssetUrl("media/akcii/20let-military.jpg"),
         highlight: "до +1 000 ₽",
         tiers: [
           { label: "+1 000 ₽", bonus: "+100 ₽ на счёт" },
@@ -263,7 +264,7 @@ export const CLUBS_DATA: ClubData[] = [
         badge: "Скидка 10%",
         badgeColor: "#10b981",
         description: "Постоянная скидка 10% на все услуги клуба для военнослужащих и курсантов военных училищ.",
-        image: "./media/akcii/lomonosov-extra.jpg",
+        image: getAssetUrl("media/akcii/lomonosov-extra.jpg"),
         highlight: "10% ВСЕГДА",
         terms: "При предъявлении военного билета или удостоверения курсанта администратору.",
       },
@@ -273,7 +274,7 @@ export const CLUBS_DATA: ClubData[] = [
         badge: "До 15% скидки",
         badgeColor: "#f59e0b",
         description: "Играй больше — получай постоянную скидку на всё игровое время в клубе!",
-        image: "./media/akcii/lomonosov-military.jpg",
+        image: getAssetUrl("media/akcii/lomonosov-military.jpg"),
         highlight: "4 УРОВНЯ",
         ranks: [
           { rank: "Bronze", time: "100 - 299 часов", discount: "3%", color: "#cd7f32" },
@@ -288,7 +289,7 @@ export const CLUBS_DATA: ClubData[] = [
         badge: "100 ₽ на баланс",
         badgeColor: "#00d4ff",
         description: "Оставь честный отзыв в 2ГИС и Яндекс Картах и получи 100 рублей на игровой баланс!",
-        image: "./media/akcii/lomonosov-review.jpg",
+        image: getAssetUrl("media/akcii/lomonosov-review.jpg"),
         highlight: "+100 ₽",
         terms: "Показать администратору опубликованный отзыв. Воспользоваться акцией можно один раз.",
       },
@@ -298,7 +299,7 @@ export const CLUBS_DATA: ClubData[] = [
         badge: "PS5 Акция",
         badgeColor: "#8b5cf6",
         description: "Покупай кальян + 1 час на PlayStation и получай 1 час игры на PlayStation в подарок!",
-        image: "./media/akcii/lomonosov-hookah-ps.jpg",
+        image: getAssetUrl("media/akcii/lomonosov-hookah-ps.jpg"),
         highlight: "+1 ЧАС FREE",
         terms: "Акция действует в лаундж-зоне с PS5. Подробности у администратора.",
       },
@@ -325,16 +326,16 @@ export const CLUBS_DATA: ClubData[] = [
     lng: 39.191632,
     workstationsCount: 50,
     tag: "Центр",
-    image: "./photos/20let/photo-1.jpg",
+    image: getAssetUrl("photos/20let/photo-1.jpg"),
     gallery: [
-      "./photos/20let/photo-1.jpg",
-      "./photos/20let/photo-2.jpg",
-      "./photos/20let/photo-3.jpg",
-      "./photos/20let/photo-4.jpg",
-      "./photos/20let/photo-5.jpg",
-      "./photos/20let/photo-6.jpg",
-      "./photos/20let/photo-7.jpg",
-      "./photos/20let/photo-8.jpg",
+      getAssetUrl("photos/20let/photo-1.jpg"),
+      getAssetUrl("photos/20let/photo-2.jpg"),
+      getAssetUrl("photos/20let/photo-3.jpg"),
+      getAssetUrl("photos/20let/photo-4.jpg"),
+      getAssetUrl("photos/20let/photo-5.jpg"),
+      getAssetUrl("photos/20let/photo-6.jpg"),
+      getAssetUrl("photos/20let/photo-7.jpg"),
+      getAssetUrl("photos/20let/photo-8.jpg"),
     ],
     pricing: {
       pc: {
@@ -397,7 +398,7 @@ export const CLUBS_DATA: ClubData[] = [
         badge: "Бонус на счёт",
         badgeColor: "#1166ff",
         description: "Пополняй игровой баланс и получай моментальный дополнительный бонус!",
-        image: "./media/akcii/20let-military.jpg",
+        image: getAssetUrl("media/akcii/20let-military.jpg"),
         highlight: "до +1 000 ₽",
         tiers: [
           { label: "+1 000 ₽", bonus: "+100 ₽ на счёт" },
@@ -411,7 +412,7 @@ export const CLUBS_DATA: ClubData[] = [
         badge: "Скидка 10%",
         badgeColor: "#10b981",
         description: "10% скидка на всё игровое время для военнослужащих и курсантов военных училищ.",
-        image: "./media/akcii/20let-cashback.jpg",
+        image: getAssetUrl("media/akcii/20let-cashback.jpg"),
         highlight: "10% ВСЕГДА",
         terms: "Предъявите военный билет или студенческий билет военного училища администратору.",
       },
@@ -421,7 +422,7 @@ export const CLUBS_DATA: ClubData[] = [
         badge: "До 15% скидки",
         badgeColor: "#f59e0b",
         description: "Копите игровые часы на аккаунте и получайте пожизненный дисконт на все зоны!",
-        image: "./media/akcii/20let-loyalty.jpg",
+        image: getAssetUrl("media/akcii/20let-loyalty.jpg"),
         highlight: "4 РАНГА",
         ranks: [
           { rank: "Bronze", time: "100 - 299 часов", discount: "3%", color: "#cd7f32" },
@@ -453,14 +454,14 @@ export const CLUBS_DATA: ClubData[] = [
     lng: 39.121882,
     workstationsCount: 40,
     tag: "Шилово",
-    image: "./photos/shilovo/photo-1.jpg",
+    image: getAssetUrl("photos/shilovo/photo-1.jpg"),
     gallery: [
-      "./photos/shilovo/photo-1.jpg",
-      "./photos/shilovo/photo-2.jpg",
-      "./photos/shilovo/photo-3.jpg",
-      "./photos/shilovo/photo-4.jpg",
-      "./photos/shilovo/photo-5.jpg",
-      "./photos/shilovo/photo-6.jpg",
+      getAssetUrl("photos/shilovo/photo-1.jpg"),
+      getAssetUrl("photos/shilovo/photo-2.jpg"),
+      getAssetUrl("photos/shilovo/photo-3.jpg"),
+      getAssetUrl("photos/shilovo/photo-4.jpg"),
+      getAssetUrl("photos/shilovo/photo-5.jpg"),
+      getAssetUrl("photos/shilovo/photo-6.jpg"),
     ],
     pricing: {
       pc: {
@@ -523,7 +524,7 @@ export const CLUBS_DATA: ClubData[] = [
         badge: "Бонус на счёт",
         badgeColor: "#1166ff",
         description: "Пополняй баланс от 1000 ₽ и получай дополнительные деньги на счёт клуба!",
-        image: "./media/akcii/20let-military.jpg",
+        image: getAssetUrl("media/akcii/20let-military.jpg"),
         highlight: "до +1 000 ₽",
         tiers: [
           { label: "+1 000 ₽", bonus: "+100 ₽ на счёт" },
@@ -537,7 +538,7 @@ export const CLUBS_DATA: ClubData[] = [
         badge: "Скидка 10%",
         badgeColor: "#10b981",
         description: "10% скидка на всё игровое время для военнослужащих и курсантов военных училищ.",
-        image: "./media/akcii/20let-cashback.jpg",
+        image: getAssetUrl("media/akcii/20let-cashback.jpg"),
         highlight: "10% ВСЕГДА",
         terms: "При предъявлении военного билета или удостоверения курсанта администратору.",
       },
@@ -547,7 +548,7 @@ export const CLUBS_DATA: ClubData[] = [
         badge: "До 15% скидки",
         badgeColor: "#f59e0b",
         description: "Играй больше — получай постоянную скидку на всё игровое время в клубе!",
-        image: "./media/akcii/20let-loyalty.jpg",
+        image: getAssetUrl("media/akcii/20let-loyalty.jpg"),
         highlight: "4 УРОВНЯ",
         ranks: [
           { rank: "Bronze", time: "100 - 299 часов", discount: "3%", color: "#cd7f32" },

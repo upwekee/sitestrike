@@ -1,3 +1,4 @@
+import { getAssetUrl } from './utils/asset';
 import { useState, useEffect, useRef } from "react";
 import { CLUBS_DATA, COMMON_FOOD_MENU } from "./data/clubsData";
 import ClubView from "./components/ClubView";
@@ -264,27 +265,27 @@ function Navbar({
 function Hero() {
   const slides = [
     {
-      image: "./photos/lomonosova/photo-3.jpg",
+      image: getAssetUrl("photos/lomonosova/photo-3.jpg"),
       badge: "STRIKE ул. Ломоносова, 84",
       spec: "RTX 4070 Ti · 240Hz · HyperX Cloud Alpha",
     },
     {
-      image: "./photos/lomonosova/photo-2.jpg",
+      image: getAssetUrl("photos/lomonosova/photo-2.jpg"),
       badge: "STRIKE ул. Ломоносова, 84",
       spec: "DUO / TRIO Зона · Ryzen 7800X3D · 600Hz",
     },
     {
-      image: "./photos/20let/photo-1.jpg",
+      image: getAssetUrl("photos/20let/photo-1.jpg"),
       badge: "STRIKE ул. 20-летия Октября, 101",
       spec: "VIP Zone · RTX 4070 Ti · 390Hz FAST IPS",
     },
     {
-      image: "./photos/lomonosova/photo-6.jpg",
+      image: getAssetUrl("photos/lomonosova/photo-6.jpg"),
       badge: "STRIKE Киберарена",
       spec: "45 ПК · 24/7 Круглосуточно · Бар & Кальян",
     },
     {
-      image: "./photos/shilovo/photo-1.jpg",
+      image: getAssetUrl("photos/shilovo/photo-1.jpg"),
       badge: "STRIKE ул. Ключникова, 1 (Шилово)",
       spec: "BOOTCAMP · RTX 4070 Super · 280Hz",
     },
@@ -1315,7 +1316,7 @@ function SmartGamerSection() {
         <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#080c1b] via-[#0b1028] to-[#080c1b] border border-[#0066ff]/40 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 text-center sm:text-left">
             <img
-              src="./smartgamer.webp"
+              src={getAssetUrl("smartgamer.webp")}
               alt="SmartGamer Logo"
               className="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl shadow-[0_0_40px_rgba(0,102,255,0.4)] border-2 border-white/10 shrink-0"
             />
@@ -1372,15 +1373,15 @@ function PhotoShowcaseSection({ onOpenPhoto }: { onOpenPhoto: (url: string, addr
 
   const photosList = activeTab === "all"
     ? [
-        { url: "./photos/lomonosova/photo-3.jpg", address: "Воронеж, ул. Ломоносова, 84" },
-        { url: "./photos/lomonosova/photo-2.jpg", address: "Воронеж, ул. Ломоносова, 84" },
-        { url: "./photos/lomonosova/photo-6.jpg", address: "Воронеж, ул. Ломоносова, 84" },
-        { url: "./photos/lomonosova/photo-4.jpg", address: "Воронеж, ул. Ломоносова, 84" },
-        { url: "./photos/20let/photo-1.jpg", address: "Воронеж, ул. 20-летия Октября, 101" },
-        { url: "./photos/20let/photo-2.jpg", address: "Воронеж, ул. 20-летия Октября, 101" },
-        { url: "./photos/20let/photo-3.jpg", address: "Воронеж, ул. 20-летия Октября, 101" },
-        { url: "./photos/shilovo/photo-1.jpg", address: "Воронеж, ул. Ключникова, 1" },
-        { url: "./photos/shilovo/photo-2.jpg", address: "Воронеж, ул. Ключникова, 1" },
+        { url: getAssetUrl("photos/lomonosova/photo-3.jpg"), address: "Воронеж, ул. Ломоносова, 84" },
+        { url: getAssetUrl("photos/lomonosova/photo-2.jpg"), address: "Воронеж, ул. Ломоносова, 84" },
+        { url: getAssetUrl("photos/lomonosova/photo-6.jpg"), address: "Воронеж, ул. Ломоносова, 84" },
+        { url: getAssetUrl("photos/lomonosova/photo-4.jpg"), address: "Воронеж, ул. Ломоносова, 84" },
+        { url: getAssetUrl("photos/20let/photo-1.jpg"), address: "Воронеж, ул. 20-летия Октября, 101" },
+        { url: getAssetUrl("photos/20let/photo-2.jpg"), address: "Воронеж, ул. 20-летия Октября, 101" },
+        { url: getAssetUrl("photos/20let/photo-3.jpg"), address: "Воронеж, ул. 20-летия Октября, 101" },
+        { url: getAssetUrl("photos/shilovo/photo-1.jpg"), address: "Воронеж, ул. Ключникова, 1" },
+        { url: getAssetUrl("photos/shilovo/photo-2.jpg"), address: "Воронеж, ул. Ключникова, 1" },
       ]
     : CLUBS_DATA[activeTab].gallery.map((url) => ({
         url,

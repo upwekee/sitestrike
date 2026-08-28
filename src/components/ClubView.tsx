@@ -1,3 +1,4 @@
+import { getAssetUrl } from '../utils/asset';
 import { useState } from "react";
 import { ClubData, CLUBS_DATA } from "../data/clubsData";
 import {
@@ -964,7 +965,7 @@ export default function ClubView({
         >
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
             <img
-              src="./smartgamer.webp"
+              src={getAssetUrl("smartgamer.webp")}
               alt="SmartGamer"
               className="w-20 h-20 rounded-2xl shadow-xl border border-white/10 shrink-0"
             />
