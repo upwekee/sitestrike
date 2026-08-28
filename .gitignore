@@ -18,3 +18,8 @@ logs/
 # beside it.
 /.plugins/
 /.opencode-skills/
+DESIGN.png
+*.png.tmp
+live_*.png
+screenshot.png
+
