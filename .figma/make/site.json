@@ -1,0 +1,10 @@
+{
+  "description": "Provides an online platform for a network of computer clubs to showcase locations, services, and events, enhancing user engagement and bookings.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
